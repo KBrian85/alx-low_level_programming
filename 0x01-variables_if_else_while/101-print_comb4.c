@@ -1,26 +1,30 @@
 #include <stdio.h>
 
 /**
- * main - prints all posiible different combinations of two digits
+ * main - prints all posiible different combinations of three digits
  * Return: Always 0 (success)
  */
 int main(void)
 {
 	int ones = '0';
 	int tens = '0';
+	int hundreds = '0';
 
-	for (tens = '0'; tens <= '9'; tens++)/* prints tens digit*/
+	for (hundreds = '0'; hundreds <= '9'; hundreds++)
 	{
-		for (ones = '0'; ones <= '9'; ones++)/* prints ones digit*/
+		for (tens = '0'; tens <= '9'; tens++)/* prints tens digit*/
 		{
-			if (!((ones == tens) || (tens > ones)))/*eliminates repitition*/
+			for (ones = '0'; ones <= '9'; ones++)/* prints ones digit*/
 			{
-				putchar(tens);
-				putchar(ones);
-				if (!(ones == '9' && tens == '8'))/*addes comma and space*/
+				if (!((ones == tens) || (tens > ones)))/*eliminates repitition*/
 				{
-					putchar(',');
-					putchar(' ');
+					putchar(tens);
+					putchar(ones);
+					if (!(ones == '9' && tens == '8'))/*addes comma and space*/
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
