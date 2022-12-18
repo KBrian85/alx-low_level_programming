@@ -16,11 +16,14 @@ int main(void)
 		{
 			for (ones = '0'; ones <= '9'; ones++)/* prints ones digit*/
 			{
-				if (!((ones == tens) || (tens > ones)))/*eliminates repitition*/
+				if (!((ones == tens) || (tens == hundreds) || (
+				tens > ones) || (hundreds > tens)))/*eliminates repitition*/
 				{
+					putchar(hundreds);
 					putchar(tens);
 					putchar(ones);
-					if (!(ones == '9' && tens == '8'))/*addes comma and space*/
+					if (!(ones == '9' && hundreds == '7' &&
+					    tens == '8'))/*addes comma and space*/
 					{
 						putchar(',');
 						putchar(' ');
