@@ -2,6 +2,8 @@
 
 /***
  * times_table - print the 9 times table
+ *
+ * Return nothin on success
  */
 void times_table(void)
 {
@@ -17,7 +19,8 @@ void times_table(void)
 			_putchar(' ');
 
 			prod = num * mult
-				if (prod <= 9)
+
+			if (prod <= 9)
 				_putchar(' ');
 			else
 				_putchar((prod / 10) + '0');
