@@ -1,9 +1,10 @@
+#include "stdio.h"
 #include "main.h"
 
 /**
  * print_remaining_days - pick a date
  * and prints how many is left
- * @month; month in mumber format
+ * @month: month in mumber format
  * @day: day of month
  * @year: year
  * Return: void
