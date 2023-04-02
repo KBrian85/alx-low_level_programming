@@ -3,12 +3,15 @@
 /**
  * _abs - computes the absolute value of an integer
  * @t: The interger to be computed
- * Return: The absolute value
+ * Return: The absolute value of number or zero
  */
-int _abs(int t)
+int _abs(int c)
 {
-	if (t >= 0)
-		return (t);
-	else
-		return (-t);
+	if (c < 0)
+	{
+		int abs_val;
+		abs_val = c * -1;
+		return (abs_val);
+	}
+	return (c);
 }
