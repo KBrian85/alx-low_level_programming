@@ -5,6 +5,7 @@
  * Retuns: 0
  */
 int main(void)
+
 {
 	int i;
 
