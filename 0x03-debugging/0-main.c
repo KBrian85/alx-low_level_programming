@@ -4,6 +4,7 @@
  * main - tests function that prints if interger is possitive or negative
  * Return: 0
  */
+
 int main(void)
 
 {
